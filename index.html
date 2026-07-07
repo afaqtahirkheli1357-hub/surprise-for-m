@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise For Yusma</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 85%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #ff4d6d;
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        button {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e63950;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ff4d6d;
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family:Arial; margin-top:100px;">
-    <h1>🎉 Hello!</h1>
-    <h2>This is my first website.</h2>
-    <p>Made by Yusma ❤️</p>
+
+<body>
+
+<div class="box">
+
+    <h1>✨ Surprise For Yusma ✨</h1>
+
+    <p>I made something special for you ❤️</p>
+
+    <button onclick="showMessage()">Open Surprise</button>
+
+    <div id="message">
+        💖 You are one of the most special people in my life.
+        <br><br>
+        Thank you for bringing happiness and beautiful moments.
+        ❤️
+    </div>
+
+</div>
+
+
+<script>
+function showMessage(){
+    document.getElementById("message").style.display="block";
+}
+</script>
+
 </body>
 </html>
